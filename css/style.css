@@ -2086,8 +2086,8 @@ iframe {
 /*-- //to-top --*/
 
 ul.result li {
-  list-style-type: none;
-  margin: 15px 0;
+  list-style-type: disc;
+  margin: 15px 0 15px 20px;
   font-size: 19px;
   letter-spacing: 2px;
 }

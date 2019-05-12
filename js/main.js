@@ -204,20 +204,36 @@ jQuery(document).ready(function ($) {
 
 
   // Kalkulator
-  function hitungEstimasi(p, l) {
-    var baseValue = 180000;
-    return (p * l) * baseValue;
+  function hitungEstimasi(panjang, tinggi, tipe) {
+    var baseDuco = 2400000;
+    var baseMelamic = 2150000;
+    var baseHPL = 1860000;
+    var total = 0;
+
+    switch (tipe) {
+      case 'duco':
+        total = (panjang * tinggi) * baseDuco;
+        break;
+      case 'melamic':
+        total = (panjang * tinggi) * baseMelamic;
+        break;
+      case 'hpl':
+        total = (panjang * tinggi) * baseHPL;
+        break;
+    }
+
+    return total;
   }
 
   $('#frmCalculator').submit(function (e) {
     e.preventDefault();
     var panjang = $('#panjang').val();
-    var lebar = $('#lebar').val();
-    if (panjang > 0 && lebar > 0) {
-      var total1 = hitungEstimasi(panjang, lebar);
-      var total2 = total1 + 3000;
-      var total3 = total1 + 5000;
-      $('#resultArea').html('<hr/><h3>Estimasi Biaya</h3><ul class="result"><li>Total 1: ' + formatRupiah(total1) + '</li><li>Total 2: ' + formatRupiah(total2) + '</li><li>Total 3: ' + formatRupiah(total3) + '</li></ul>');
+    var tinggi = $('#tinggi').val();
+    if (panjang > 0 && tinggi > 0) {
+      var total1 = hitungEstimasi(panjang, tinggi, 'duco');
+      var total2 = hitungEstimasi(panjang, tinggi, 'melamic');
+      var total3 = hitungEstimasi(panjang, tinggi, 'hpl');
+      $('#resultArea').html('<hr/><h3>Estimasi Biaya</h3><ul class="result"><li>Finishing Duco: ' + formatRupiah(total1) + '</li><li>Finishing Melamic: ' + formatRupiah(total2) + '</li><li>Finishing HPL: ' + formatRupiah(total3) + '</li></ul>');
     }
   });
 });
