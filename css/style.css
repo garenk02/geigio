@@ -1658,7 +1658,7 @@ ul.footer-nav li a:hover {
 /*-- inner page banner --*/
 
 .inner-page-banner {
-  height: 45vw;
+  height: 25vw;
 }
 
 .inner-page-banner, #about, #contact {
@@ -2603,7 +2603,7 @@ ul.result li {
   }
 
   .inner-page-banner {
-    height: 65vw;
+    height: 72vw;
   }
 
   .banner_bottom_agile_grids {
