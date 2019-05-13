@@ -209,20 +209,26 @@ jQuery(document).ready(function ($) {
     var baseMelamic = 2150000;
     var baseHPL = 1860000;
     var total = 0;
+    var volume = panjang * tinggi;
 
     switch (tipe) {
       case 'duco':
-        total = (panjang * tinggi) * baseDuco;
+        total = volume * baseDuco;
         break;
       case 'melamic':
-        total = (panjang * tinggi) * baseMelamic;
+        total = volume * baseMelamic;
         break;
       case 'hpl':
-        total = (panjang * tinggi) * baseHPL;
+        total = volume * baseHPL;
         break;
     }
 
-    return total;
+    if (volume >= 11) {
+      var diskon = total * 0.03;
+      return total - diskon;
+    } else {
+      return total;
+    }
   }
 
   $('#frmCalculator').submit(function (e) {

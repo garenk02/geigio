@@ -114,17 +114,19 @@
 <section class="contact py-5">
   <div class="container">
     <h2 class="heading text-capitalize mb-sm-5 mb-5 text-center">Kalkulator</h2>
-    <p class="mb-5">Kalkulator ini berfungsi untuk menghitung estimasi biaya per meter persegi yang anda keluarkan dalam satuan
-      rupiah.</p>
+    <p class="mb-5">
+      Kalkulator ini berfungsi untuk menghitung estimasi biaya per meter persegi yang anda keluarkan dalam satuan rupiah.<br>
+      Untuk pemesanan diatas 10 meter, maka harga total telah kami berikan diskon khusus &#128522;
+    </p>
     <div class="mail_grid_w3l">
       <form id="frmCalculator" method="post">
         <div class="row">
           <div class="col-md-12" data-aos="fade-right">
             <div class="contact-fields-w3ls">
-              <input type="number" name="panjang" id="panjang" placeholder="Panjang (m)" maxlength="5" required>
+              <input type="number" name="panjang" id="panjang" placeholder="Panjang (m)" min="1" maxlength="5" required>
             </div>
             <div class="contact-fields-w3ls">
-              <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (m)" maxlength="5" required>
+              <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (m)" min="1" maxlength="5" required>
             </div>
             <input type="submit" id="hitung" value="Hitung">
           </div>
@@ -134,6 +136,17 @@
     </div>
   </div>
 </section>
+<div class="text-center mb-5">
+  <h3 class="mb-3">Segera hubungi kami:</h3>
+  <a href="https://api.whatsapp.com/send?phone=+6281295990500&text=Halo%2C%20admin%20GeiGio.com%0A%0ASaya%20ingin%20info%20lebih%20detil%20perihal%20layanan%20disana%0ABerikut%20data%20saya%3A%0A%0ANama%3A%20%0AEmail%3A%20%0AKebutuhan%3A%0ALokasi%3A%0A%0ATerima%20kasih"
+     class="btn btn-lg btn-success" target="_blank">
+    <i class="fab fa-whatsapp"></i> 0812-9599-0500
+  </a>
+  <span class="mr-3"></span>
+  <a href="tel:+6282211456701" class="btn btn-lg btn-primary" target="_blank">
+    <i class="fas fa-phone"></i> 0822-1145-6701
+  </a>
+</div>
 <!-- 728x90 -->
 <!-- //calculator -->
 <!-- footer -->
