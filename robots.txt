@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /css
+Disallow: /images
+Disallow: /js
+Disallow: /webfonts
+Sitemap: https://www.geigio.com/sitemap.xml
