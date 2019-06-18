@@ -53,6 +53,9 @@ img {
   width: 100%;
 }
 
+div#home-page {
+  background-color: #000000;
+}
 
 /*-- banner --*/
 header {
@@ -110,6 +113,7 @@ img.logo {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .navbar-light .navbar-brand {
@@ -242,6 +246,15 @@ a.read:hover, a.read2:hover {
 
 /*-- //banner --*/
 
+/*-- main menu --*/
+#main-menu {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 /*-- about --*/
 h3.heading, h2.heading {
   font-size: 50px;
@@ -260,6 +273,15 @@ h3.heading, h2.heading {
   position: relative;
   margin-bottom: 1.2rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.card-title-new {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: normal;
+  letter-spacing: 2px;
+  position: relative;
 }
 
 .card-text {
@@ -320,6 +342,25 @@ h3.heading, h2.heading {
   font-size: 14px;
   border-radius: 0;
   border: 1px solid #333;
+}
+
+.card-img-top-new {
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+
+.card-img-cover {
+  width: 110%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+p.about-us {
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  text-align: justify;
 }
 
 section.agile_stats {
@@ -722,6 +763,12 @@ h5.mt-0 {
 }
 
 /* //blog responsive code */
+
+@media screen and (min-width: 992px) {
+  #main-menu {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1680px) {
 }
@@ -2094,6 +2141,10 @@ ul.result li {
 
 /*-- /Responsive Design --*/
 
+/*@media screen and (min-width: 990px) {*/
+/*  #main-menu { display: inline; }*/
+/*}*/
+
 @media (max-width: 1440px) {
   iframe {
     height: 428px;
@@ -2773,62 +2824,5 @@ ul.result li {
 @media (max-width: 1080px) {
 
 }
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
-@media (max-width: 1080px) {
-
-}
-
 
 /*-- //Responsive Design --*/
