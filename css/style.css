@@ -283,12 +283,26 @@ h3.white {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
+.card-title-pl {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
 .card-title-new {
   text-transform: uppercase;
   font-size: large;
   color: #FFFFFF;
   letter-spacing: 1px;
   padding-top: 10px;
+}
+
+.card-title-new a, .card-title-pl a {
+  color: #fff;
 }
 
 .card-text {
@@ -304,7 +318,7 @@ h3.white {
 .card-title:after {
   position: absolute;
   content: '';
-  background: #F44336;
+  /*background: #F44336;*/
   width: 20%;
   height: 2px;
   left: 40%;
@@ -315,7 +329,7 @@ h3.white {
   color: #F44336;
 }
 
-.card-title a:hover {
+.card-title a:hover, .card-title-pl a:hover {
   color: #6c757d;
 }
 
