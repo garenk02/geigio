@@ -100,6 +100,10 @@ img.logo {
   color: #fff;
 }
 
+a.top-menu:hover, a.top-menu:focus {
+  color: #ffffff;
+}
+
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
   color: #fff;
   font-size: 18px;
@@ -277,11 +281,10 @@ h3.heading, h2.heading {
 
 .card-title-new {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: large;
   color: #FFFFFF;
-  font-weight: normal;
-  letter-spacing: 2px;
-  position: relative;
+  letter-spacing: 1px;
+  padding-top: 10px;
 }
 
 .card-text {
@@ -345,8 +348,8 @@ h3.heading, h2.heading {
 }
 
 .card-img-top-new {
-  width: 100px;
-  height: 100px;
+  width: 75%;
+  height: auto;
   border: none;
 }
 
@@ -763,12 +766,6 @@ h5.mt-0 {
 }
 
 /* //blog responsive code */
-
-@media screen and (min-width: 992px) {
-  #main-menu {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 1680px) {
 }
@@ -2140,10 +2137,18 @@ ul.result li {
 }
 
 /*-- /Responsive Design --*/
+@media screen and (min-width: 992px) {
+  #main-menu {
+    display: none;
+  }
+}
 
-/*@media screen and (min-width: 990px) {*/
-/*  #main-menu { display: inline; }*/
-/*}*/
+@media screen and (max-width: 500px) {
+  .card-title-new {
+    font-size: x-small;
+    letter-spacing: 0.5px;
+  }
+}
 
 @media (max-width: 1440px) {
   iframe {
